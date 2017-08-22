@@ -3,6 +3,7 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
@@ -16,36 +17,48 @@
     <div class="form-group">
       <label for="movie">Movie</label>
       <select class="form-control" id="movie">
-        <option>Movie 1</option>
-        <option>Movie 2</option>
-        <option>Movie 3</option>
-        <option>Movie 4</option>
+        <option>Enemy</option>
+        <option>Blade Runner</option>
+        <option>Saving Private Ryan</option>
+        <option>The Last of the Mohicans</option>
       </select>
     </div>
 
     <div class="form-group">
       <label for="time">Times</label>
       <select class="form-control" id="time">
-        <option>Time 1</option>
-        <option>Time 2</option>
-        <option>Time 3</option>
-        <option>Time 4</option>
+        <option>10:00 am</option>
+        <option>12:00 pm</option>
+        <option>4:00 pm</option>
+        <option>6:00 pm</option>
       </select>
     </div>
 
     <div class="form-group">
       <label for="age">Your Age</label>
       <select class="form-control" id="age">
-        <option>Age Group 1</option>
-        <option>Age Group 2</option>
-        <option>Age Group 3</option>
-        <option>Age Group 4</option>
+        <option>Youth</option>
+        <option>Adult</option>
+        <option>Senior</option>
       </select>
     </div>
-    <button type="submit" name="button" id="submit" >Submit</button>
+    <button type="submit" name="button" onclick="showTable()" id="submit" >Submit</button>
   </form>
 
-
+    <table class="table">
+      <tr>
+        <th>Movie</th>
+        <th>Time</th>
+        <th>Age Discount</th>
+        <th>Ticket Price</th>
+      </tr>
+      <tr>
+        <td id="movieOut"></td>
+        <td id="timeOut"></td>
+        <td id="ageOut"></td>
+        <td id="priceOut"></td>
+      </tr>
+    </table>
 
   </div>
   </body>
